@@ -149,6 +149,8 @@ main section{
 .section-title{
     font-size: 3rem;
     font-weight: bold;
+
+    text-align: center;
 }
 
 .section-description{
@@ -171,15 +173,67 @@ hr{
     justify-content: space-between;
 }
 
-.card{
-    padding: 20px;
-}
 
 .card h1{
     font-size: 2.5rem;
     font-weight: bold;
 
     color: #00FF88;
+}
+
+
+.temp-1{
+    padding-top: 80px;
+}
+
+.card-container{
+    max-width: 1200px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.card-common{
+    padding: 30px;
+
+    background-color: #36035b;
+
+    border: 1px solid #9100F8;
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 5px #F7E93F;
+    
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-common img{
+    width: 50px;
+}
+
+.card-common h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    margin-top: 16px;
+}
+
+
+.card-common p{
+    margin-top: 16px;
+}
+
+.card-1{
+    grid-row: span 2;
+}
+
+.card-2,
+.card-3,
+.card-4{
+    grid-column: span 2;
 }
 
 
@@ -253,4 +307,17 @@ hr{
     .about-cards{
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    .card-common{
+        max-width: 95%;
+        margin: 16px auto;
+    }
+
+    
 }
