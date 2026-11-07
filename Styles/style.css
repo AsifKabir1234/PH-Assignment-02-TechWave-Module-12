@@ -4,6 +4,8 @@ body{
     box-sizing: border-box;
 
     padding-bottom: 100px;
+
+    color: white;
 }
 
 header{
@@ -20,12 +22,14 @@ header{
     align-items: center;
 }
 
-.nav-title{
+.nav-title,
+.footer-title{
     font-size: 3.75rem;
     font-weight: 700;
 }
 
-.nav-title span{
+.nav-title span,
+.footer-title span{
     background-image: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
 
     background-clip: text;
@@ -295,6 +299,101 @@ hr{
     margin-bottom: 10px;
 }
 
+.host-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    background-color: #36035b;
+
+    border-radius: 30px;
+
+    padding: 20px;
+    
+}
+
+.host-container img{
+    max-width: 300px;
+}
+
+.host-container h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.host-container p{
+    margin-top: 16px;
+}
+
+.host-container .icon-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 16px;
+
+    padding: 5px;
+}
+
+.icon-container div{
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.icon-container div img{
+    width: 80%;
+}
+
+footer{
+    background: url(../assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+
+    max-width: 1600px;
+    margin: 0 auto;
+
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+.footer-content{
+    text-align: center;
+    padding: 100px;
+}
+
+.footer-title{
+    text-align: center;
+}
+
+.footer-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+
+.copyright{
+    margin-top: 20px;
+}
+
 
 
 @media screen and (max-width: 576px) {
@@ -375,11 +474,26 @@ hr{
     }
 
 
-
     .video-container{
         grid-template-columns: repeat(1, 1fr);
         max-width: 90%;
     }
 
+    .host-container{
+        flex-direction: column;
+
+        max-width: 90%;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .icon-container{
+        justify-content: center ;
+    }
+
+    .footer-content{
+        padding: 20px;
+    }
     
 }
