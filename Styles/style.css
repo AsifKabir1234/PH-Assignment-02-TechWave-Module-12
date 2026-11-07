@@ -1,3 +1,9 @@
+/* body{
+    background-color: #210337;
+    
+    color: white;
+} */
+
 header{
     max-width: 1600px;
     margin: 0 auto;
@@ -121,7 +127,60 @@ header{
 
 
 
+main section{
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-color: #210337;
+    
+    color: white;
+}
+
 /*About Section Related Styles*/
+
+.about-container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 100px;
+
+    text-align: center;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.section-description{
+    padding: 12px 100px;
+}
+
+hr{
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.about-cards{
+    max-width: 1200px;
+    margin: 0px auto;
+
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+.card{
+    padding: 20px;
+}
+
+.card h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    color: #00FF88;
+}
 
 
 
@@ -174,5 +233,24 @@ header{
     .hero-buttons .btn-1,
     .hero-buttons .btn-2{
        font-size: 1rem;
+    }
+
+
+
+    .section-title{
+        font-size: 2rem;
+    }
+
+    .section-description{
+        padding: 20px 30px;
+    }
+
+    hr{
+        max-width: 90%;
+        margin: 30px auto;
+    }
+
+    .about-cards{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
