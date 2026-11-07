@@ -1,0 +1,178 @@
+header{
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-color: #210337;
+    color: white;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+.nav-title span{
+    background-image: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
+
+    background-clip: text;
+
+    color: transparent;
+
+}
+
+.nav-menu{
+    display: flex;
+    gap: 32px;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btn-primary,
+.hero-buttons .btn-1,
+.hero-buttons .btn-2{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    background-image: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
+
+    border-radius: 16px;
+
+    padding: 12.5px 16px;
+}
+
+.nav-hamburger{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.hero-banner{
+    text-align: center;
+
+    /* background-image: url("../assets/hero-bg.png"); */
+    background-image: url("../assets/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-image{
+    width: 350px;
+    height: 350px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
+
+    border: 4px solid blue;
+    border-radius: 50%;
+}
+
+.hero-image img{
+    text-align: center;
+    width: 50%;
+    margin: auto auto;
+}
+
+.hero-title{
+    font-size: 3rem;
+    font-weight: bold;
+    
+    margin-top: 32px;
+}
+
+.hero-description{
+    font-size: 1.2rem;
+
+    margin-top: 12px;
+}
+
+.hero-buttons{
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-buttons .btn-2{
+    color: #00FF88;
+
+    border: 3px solid #00FF88;
+    background: transparent;
+}
+
+
+
+/*About Section Related Styles*/
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .nav-bar{
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .nav-title{
+        font-size: 2rem;
+    }
+
+    .nav-menu,
+    .nav-bar .btn-primary{
+        display: none;
+    }
+
+    .nav-hamburger{
+        display: initial;
+    }
+
+    .hero-banner{
+        background-size: 120% auto;
+        background-position: top center;
+    }
+
+    .hero-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-content{
+        padding: 20px 30px;
+    }
+
+    .hero-title{
+        font-size: 2rem;
+    }
+
+    .hero-description{
+        font-size: 1rem;
+    }
+
+    .hero-buttons .btn-1,
+    .hero-buttons .btn-2{
+       font-size: 1rem;
+    }
+}
