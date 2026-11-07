@@ -1,8 +1,10 @@
-/* body{
-    background-color: #210337;
-    
-    color: white;
-} */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    padding-bottom: 100px;
+}
 
 header{
     max-width: 1600px;
@@ -141,7 +143,6 @@ main section{
 .about-container{
     max-width: 1200px;
     margin: 0px auto;
-    padding-top: 100px;
 
     text-align: center;
 }
@@ -151,6 +152,9 @@ main section{
     font-weight: bold;
 
     text-align: center;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .section-description{
@@ -188,7 +192,7 @@ hr{
 
 .card-container{
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 0px auto;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -237,8 +241,59 @@ hr{
 }
 
 
+.video-container{
+    max-width: 1200px;
+    margin: 0 auto;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 
+}
+
+.video-card{
+    width: 100%;
+    background-color: #36035b;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.video-card iframe{
+    width: 100%;
+
+    border: none;
+    border-radius: 20px;
+}
+
+.video-card h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.video-time{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.video-card h3,
+.video-card p,
+.video-card img,
+.video-card .video-time{
+    padding: 10px 20px;
+}
+
+.video-card p{
+    height: 100px;
+}
+
+.video-time{
+    color: #00FF88;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 
 
@@ -315,8 +370,15 @@ hr{
     }
 
     .card-common{
-        max-width: 95%;
+        max-width: 90%;
         margin: 16px auto;
+    }
+
+
+
+    .video-container{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90%;
     }
 
     
